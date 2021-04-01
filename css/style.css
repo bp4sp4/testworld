@@ -1,0 +1,18 @@
+@import "./reset.css";
+@import "./variables.css";
+@import "../css/vh.css";
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/* Screen */
+@import "./screens/index.css";
+
+body {
+  background-color: #a69f92;
+  font-family: "Bungee", "Noto Sans KR", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  height: 100vh;
+}
