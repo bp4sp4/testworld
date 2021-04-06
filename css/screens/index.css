@@ -1,0 +1,44 @@
+header {
+  height: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+section {
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .wrap .logo {
+  margin: 0 0 10% 0;
+}
+section .wrap .logo img {
+  max-width: 100%;
+}
+
+section .wrap .loginBtn {
+  transition: margin-top 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
+  background: #d9d0c1;
+  border: solid 1px #d9d0c1;
+  border-radius: 25px;
+  box-shadow: 1px 0px 0px #59554f, 0px 1px 0px #59554f, 2px 1px 0px #59554f,
+    1px 2px 0px #59554f, 3px 2px 0px #59554f, 2px 3px 0px #59554f,
+    4px 3px 0px #59554f, 3px 4px 0px #59554f, 5px 4px 0px #59554f,
+    4px 5px 0px #59554f, 6px 5px 0px #59554f, 5px 6px 0px #59554f,
+    7px 6px 0px #59554f, 6px 7px 0px #59554f, 8px 7px 0px #59554f,
+    7px 8px 0px #59554f, 9px 8px 0px #59554f, 8px 9px 0px #59554f,
+    10px 9px 0px #59554f, 9px 10px 0px #59554f, 11px 10px 0px #59554f,
+    10px 11px 0px #59554f;
+}
+section .wrap .loginBtn button {
+  display: block;
+  padding: 0.5em 1em;
+  font-size: 72px;
+  color: var(--textColor);
+}

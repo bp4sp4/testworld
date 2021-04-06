@@ -1,0 +1,75 @@
+.modal-head {
+  display: flex;
+  width: 100%;
+  margin: 0 0 100px 0;
+  justify-content: space-between;
+}
+.loginForm {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 0 100px 0;
+  padding: 20px 0;
+}
+.loginForm .login__sns {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.loginForm .login__sns button {
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.loginForm .login__sns button:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.loginForm .login__sns button:active {
+  transform: scale(0.98);
+}
+.loginForm .login__sns .loginBtn__kakao {
+  border: 1px solid #807300;
+  background-color: #fee500;
+  color: #181600;
+}
+.loginForm .login__sns .loginBtn__naver {
+  border: 1px solid #08a600;
+  background-color: #4ec53d;
+  color: #ffffff;
+}
+/* 비회원 로그인 */
+.loginForm .login__non form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.loginForm .login__non form .gender_radio {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.loginForm .login__non form .gender_radio label input {
+  margin: 0 5px 0 0;
+}
+.loginForm .login__non form select {
+  width: 100%;
+  padding: 0.5em;
+}
+.loginForm .login__non form .loginBtn__non {
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #2a3133;
+  background-color: #353d40;
+  color: #ffffff;
+}
+.loginForm .login__non form .loginBtn__non:active {
+  transform: scale(0.98);
+}

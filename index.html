@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/jquery-3.2.1.min.js"></script>
+  <script defer src="./js/modalLayer.js"></script>
   <title>TestWorld</title>
 </head>
 <body>
@@ -18,10 +20,48 @@
           <img src="./image/icon/Logo_L.png" alt="로고 이미지 L">
         </div>
         <div class="loginBtn">
-          <a href="#">Login</a>
+          <button class="trigger" id="myBtn" href="#">Login</button>
+        </div>
+        <!-- modal -->
+        <div id="myModal" class="modal">
+          <!-- modal content -->
+          <div class="modal-content">
+            <div class="modal-head">
+              <div class="login-modal__logo_S">
+                <img src="./image/icon/Logo_S.png" alt="로고 이미지 small">
+              </div>
+              <span class="close">&times;</span>
+            </div>
+            <div class="loginForm">
+              <div class="login__sns">
+                <button class="loginBtn__kakao">카카오 로그인</button>
+                <button class="loginBtn__naver">네이버 로그인</button>
+              </div>
+              <div class="login__non">
+                <form action="">
+                  <div class="gender_radio">
+                    <label for="men">
+                      <input type="radio" name="gender" id="men">남
+                    </label>
+                    <label for="woman">
+                      <input type="radio" name="gender" id="woman">여
+                    </label>
+                  </div>
+                  <select name="ageGroup" id="ageGroup">
+                    <option>연령대</option>
+                    <option value="10s">10대</option>
+                    <option value="20s">20대</option>
+                    <option value="30s">30대</option>
+                    <option value="40s">40대</option>
+                    <option value="50s">50대</option>
+                  </select>
+                  <button class="loginBtn__non" >비회원 로그인</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="layerPopup"></div>
     </section>
   </div>
 </body>

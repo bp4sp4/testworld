@@ -3,8 +3,13 @@
 @import "../css/vh.css";
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-/* Screen */
+
+/* Screens */
 @import "./screens/index.css";
+
+/* components */
+@import "./components/modalLayer.css";
+@import "./components/loginModal.css";
 
 body {
   background-color: #a69f92;
@@ -12,6 +17,9 @@ body {
 }
 a {
   text-decoration: none;
+}
+button {
+  all: unset;
 }
 .container {
   height: 100vh;
