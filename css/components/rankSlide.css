@@ -1,0 +1,115 @@
+.ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ranking .age_list {
+    width: 60%;
+    min-width: 860px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ranking .age_list .age {
+    /* width: 100%; */
+  }
+  .ranking .age_list .age .age_btn {
+    padding: 0.3em 0.5em;
+    font-size: 72px;
+    color: var(--textColor);
+  }
+  .ranking .age_list .age .age_btn.current,
+  .ranking .age_list .age .age_btn:focus-visible,
+  .ranking .age_list .age .age_btn:hover{
+    transition: margin-top 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
+    background: #d9d0c1;
+    box-shadow: 1px 0px 0px #59554f, 0px 1px 0px #59554f, 2px 1px 0px #59554f,
+      1px 2px 0px #59554f, 3px 2px 0px #59554f, 2px 3px 0px #59554f,
+      4px 3px 0px #59554f, 3px 4px 0px #59554f, 5px 4px 0px #59554f,
+      4px 5px 0px #59554f, 6px 5px 0px #59554f, 5px 6px 0px #59554f,
+      7px 6px 0px #59554f, 6px 7px 0px #59554f, 8px 7px 0px #59554f,
+      7px 8px 0px #59554f, 9px 8px 0px #59554f, 8px 9px 0px #59554f,
+      10px 9px 0px #59554f, 9px 10px 0px #59554f, 11px 10px 0px #59554f,
+      10px 11px 0px #59554f, 12px 11px 0px #59554f, 11px 12px 0px #59554f;
+  }
+  .ranking .age_rank_wrap.current {
+    display: block;
+  }
+  .ranking .age_rank_wrap {
+    display: none;
+    width: 60%;
+    min-width: 860px;
+    transition: margin-top 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
+    background: #d9d0c1;
+    box-shadow: 1px 0px 0px #59554f, 0px 1px 0px #59554f, 2px 1px 0px #59554f,
+      1px 2px 0px #59554f, 3px 2px 0px #59554f, 2px 3px 0px #59554f,
+      4px 3px 0px #59554f, 3px 4px 0px #59554f, 5px 4px 0px #59554f,
+      4px 5px 0px #59554f, 6px 5px 0px #59554f, 5px 6px 0px #59554f,
+      7px 6px 0px #59554f, 6px 7px 0px #59554f, 8px 7px 0px #59554f,
+      7px 8px 0px #59554f, 9px 8px 0px #59554f, 8px 9px 0px #59554f,
+      10px 9px 0px #59554f, 9px 10px 0px #59554f, 11px 10px 0px #59554f,
+      10px 11px 0px #59554f, 12px 11px 0px #59554f, 11px 12px 0px #59554f;
+  }
+  .ranking .age_rank_wrap .age_rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+  }
+  .ranking .age_rank_wrap .age_rank li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .ranking .age_rank_wrap .age_rank li:not(:last-child) {
+    margin: 0 0 5% 0;
+  }
+  .ranking .age_rank_wrap .age_rank li .rank_number {
+    width: 10%;
+    margin: 0 5% 0 0;
+    font-size: 150px;
+    text-align: center;
+  }
+  .ranking .age_rank_wrap .age_rank .rank-1 .rank_number {
+    color: #a6746f;
+  }
+  .ranking .age_rank_wrap .age_rank .rank-2 .rank_number {
+    color: #616858;
+  }
+  .ranking .age_rank_wrap .age_rank .rank-3 .rank_number {
+    color: #66644b;
+  }
+  .ranking .age_rank_wrap .age_rank li .rank_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .ranking .age_rank_wrap .age_rank li .rank_content img {
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+  }
+  .ranking .age_rank_wrap .age_rank li .rank_content div {
+    width: 80%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+  }
+  .ranking .age_rank_wrap .age_rank li .rank_content .rank_content_desc > h4 {
+    font-size: 30px;
+    margin: 0 0 1em 0;
+  }
+  .ranking .age_rank_wrap .age_rank li .rank_content .rank_content_desc > p {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    height: 2.4em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  

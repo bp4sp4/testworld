@@ -6,16 +6,23 @@
 
 /* Screens */
 @import "./screens/index.css";
+@import "./screens/content.css";
 
 /* components */
 @import "./components/modalLayer.css";
 @import "./components/loginModal.css";
+@import "./components/indexHeader.css";
+@import "./components/contentHeader.css";
+@import "./components/profileSlide.css";
+@import "./components/rankSlide.css";
+@import "./components/fullPageTwo.css";
 
 body {
   background-color: #a69f92;
   font-family: "Bungee", "Noto Sans KR", sans-serif;
 }
 a {
+  color: black;
   text-decoration: none;
 }
 button {

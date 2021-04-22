@@ -1,0 +1,61 @@
+.fullpage-two_contents {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.recommened_area {
+  width: 45%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.recommened_area .recommened_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.recommened_list li:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+.recommened_list li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recommened_list li a:hover {
+  font-weight: bold;
+}
+.recommened_list li a img {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+.content-list_area {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 20px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.content-list_area button {
+  align-self: flex-end;
+  margin: 0 0 10px 0;
+}
+.content-list_area button:active {
+  transform: scale(0.9);
+}
+.content-list_area ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-list_area ul li {
+  font-size: 20px;
+}
+.content-list_area ul li a:hover {
+  font-weight: bold;
+}
+.content-list_area ul li:not(:last-child) {
+  margin: 0 0 20px 0;
+}

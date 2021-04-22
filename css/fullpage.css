@@ -111,6 +111,9 @@ html.fp-enabled,
     left: 17px;
 }
 .fp-slidesNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     z-index: 4;
     opacity: 1;
