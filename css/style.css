@@ -11,6 +11,7 @@
 /* components */
 @import "./components/modalLayer.css";
 @import "./components/loginModal.css";
+@import "./components/contentModal.css";
 @import "./components/indexHeader.css";
 @import "./components/contentHeader.css";
 @import "./components/profileSlide.css";

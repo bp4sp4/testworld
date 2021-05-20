@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="./js/jquery-3.2.1.min.js"></script>
-  <script defer src="./js/modalLayer.js"></script>
-  <!-- <script defer src="./js/contentModalLayer.js"></script> -->
+  <script defer src="./js/clickPopup.js"></script>
+  <script defer src="./js/infiniteScroll.js"></script>
   <title>TestWorld</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
       <nav>
         <ul class="in_nav">
           <li>
-            <button id="contentBtn">Content</button>
+            <button onclick="openPopup('contentPopup')">Content</button>
           </li>
           <li class="share_list">
             <button><img src="./image/icon/공유.svg" alt="공유 아이콘"></button>
@@ -43,35 +43,139 @@
           </li>
         </ul>
       </nav>
-      <!-- <div id="contentModal" class="cModal">
-        <div class="modal-head">
-          <div class="login-modal__logo_S">
-            <img src="./image/icon/Logo_S.png" alt="로고 이미지 small">
-            </div>
-            <span class="close">&times;</span>
-          </div>
-          <div class="modal-content">
-            나나나나
-          </div>
-        </div> -->
-      </header>
+    </header>
     <section>
+      <!-- Content Popup -->
       <div class="wrap">
-        <div class="logo">
-          <img src="./image/icon/Logo_L.png" alt="로고 이미지 L">
-        </div>
-        <div class="loginBtn">
-          <button class="trigger" id="myBtn" href="#">Login</button>
-        </div>
-        <!-- modal -->
-        <div id="myModal" class="modal">
-          <!-- modal content -->
+        <div id="contentPopup" class="modal">
           <div class="modal-content">
             <div class="modal-head">
               <div class="login-modal__logo_S">
                 <img src="./image/icon/Logo_S.png" alt="로고 이미지 small">
               </div>
-              <span class="close">&times;</span>
+              <span class="close" onclick="closePopup();">&times;</span>
+            </div>
+            <div class="content_list_area">
+              <ul id="contentLists">
+                <li >
+                  <a href="#">
+                    <div class="content_item">
+                      <img src="./image/300x300.png" alt="썸네일이미지">
+                      <div class="content_item_desc">
+                        <div class="content_item_desc_text">
+                          <h4>재미로 보는 심리테스트 1</h4>
+                          <p>
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="content_item">
+                      <img src="./image/300x300.png" alt="썸네일이미지">
+                      <div class="content_item_desc">
+                        <div class="content_item_desc_text">
+                          <h4>재미로 보는 심리테스트 2</h4>
+                          <p>
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="content_item">
+                      <img src="./image/300x300.png" alt="썸네일이미지">
+                      <div class="content_item_desc">
+                        <div class="content_item_desc_text">
+                          <h4>재미로 보는 심리테스트 3</h4>
+                          <p>
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="content_item">
+                      <img src="./image/300x300.png" alt="썸네일이미지">
+                      <div class="content_item_desc">
+                        <div class="content_item_desc_text">
+                          <h4>재미로 보는 심리테스트 4</h4>
+                          <p>
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="content_item">
+                      <img src="./image/300x300.png" alt="썸네일이미지">
+                      <div class="content_item_desc">
+                        <div class="content_item_desc_text">
+                          <h4>재미로 보는 심리테스트 5</h4>
+                          <p>
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                            간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Section area -->
+        <div class="logo">
+          <img src="./image/icon/Logo_L.png" alt="로고 이미지 L">
+        </div>
+        <div class="loginBtn">
+          <button onclick="openPopup('myModal');" href="#">Login</button>
+        </div>
+        <!-- Login Popup -->
+        <div id="myModal" class="modal" >
+          <div class="modal-content">
+            <div class="modal-head">
+              <div class="login-modal__logo_S">
+                <img src="./image/icon/Logo_S.png" alt="로고 이미지 small">
+              </div>
+              <span class="close" onclick="closePopup();">&times;</span>
             </div>
             <div class="loginForm">
               <div class="login__sns">
