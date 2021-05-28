@@ -8,7 +8,7 @@
   color: var(--textColor);
 }
 
-.con_nav li button:hover {
+.con_nav li button:hover:not(.share_dropdown-items button) {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -37,17 +37,18 @@
 .share_list:hover .share_dropdown-items {
   display: flex;
 }
-.share_dropdown-items a {
+.share_dropdown-items button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--textColor);
 }
-.share_dropdown-items a .share-item_title {
+.share_dropdown-items button .share-item_title {
   border-bottom: 3px solid rgba(0, 0, 0, 0);
+  font-size: 16px;
 }
-.share_dropdown-items a:hover .share-item_title {
+.share_dropdown-items button:hover .share-item_title {
   border-bottom: 3px solid var(--textColor);
 }
 .share_dropdown-items li {

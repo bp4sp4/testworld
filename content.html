@@ -9,9 +9,9 @@
   <script defer type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
   <script defer type="text/javascript" src="./js/fullpage.js"></script>
   <script defer type="text/javascript" src="./js/option.js"></script>
-  <script defer type="text/javascript" src="./js/modalLayer.js"></script>
+  <script defer type="text/javascript" src="./js/clickPopup.js"></script>
   <script defer type="text/javascript" src="./js/rankTab.js"></script>
-  <script defer type="text/javascript" src="./js/dragAndMove.js"></script>
+  <script defer type="text/javascript" src="./js/copyUrl.js"></script>
   <title>TestWorld</title>
 </head>
 <body>
@@ -28,29 +28,144 @@
           </button>
           <ul class="share_dropdown-items">
             <li>
-              <a href="">
+              <button>
                  <img src="./image/icon/카카오톡.svg" alt="">
                  <div class="share-item_title">KAKAO</div>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="">
+              <button>
                 <img src="./image/icon/페이스북.svg" alt="">
                 <div class="share-item_title">FACEBOOK</div>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="">
+              <button id="copyUrl" onclick="copyToClipboard();">
                 <img src="./image/icon/링크.svg" alt="">
                 <div class="share-item_title">URL</div>
-              </a>
-              </li>
+              </button>
+            </li>
           </ul>
         </li>
       </ul>
     </nav>
   </header>
+  <div id="contentPopup" class="modal">
+    <div class="modal-content">
+      <div class="modal-head">
+        <div class="login-modal__logo_S">
+          <img src="./image/icon/Logo_S.png" alt="로고 이미지 small">
+        </div>
+        <span class="close" onclick="closePopup();">&times;</span>
+      </div>
+      <div class="content_list_area">
+        <ul id="contentLists">
+          <li >
+            <a href="#">
+              <div class="content_item">
+                <img src="./image/300x300.png" alt="썸네일이미지">
+                <div class="content_item_desc">
+                  <div class="content_item_desc_text">
+                    <h4>재미로 보는 심리테스트 1</h4>
+                    <p>
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="content_item">
+                <img src="./image/300x300.png" alt="썸네일이미지">
+                <div class="content_item_desc">
+                  <div class="content_item_desc_text">
+                    <h4>재미로 보는 심리테스트 2</h4>
+                    <p>
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="content_item">
+                <img src="./image/300x300.png" alt="썸네일이미지">
+                <div class="content_item_desc">
+                  <div class="content_item_desc_text">
+                    <h4>재미로 보는 심리테스트 3</h4>
+                    <p>
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="content_item">
+                <img src="./image/300x300.png" alt="썸네일이미지">
+                <div class="content_item_desc">
+                  <div class="content_item_desc_text">
+                    <h4>재미로 보는 심리테스트 4</h4>
+                    <p>
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="content_item">
+                <img src="./image/300x300.png" alt="썸네일이미지">
+                <div class="content_item_desc">
+                  <div class="content_item_desc_text">
+                    <h4>재미로 보는 심리테스트 5</h4>
+                    <p>
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                      간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div id="fullpage">
+    <!-- rolling page 1 -->
     <section class="section">
       <div class="slide" >
         <div class="rollingPage_1">
@@ -655,6 +770,7 @@
         </div>
       </div>
     </section>
+    <!-- rolling page 2 -->
     <section class="section">
       <div class="fullpage-two_wrap">
         <div class="fullpage-two_contents">
@@ -675,7 +791,7 @@
             </ul>
           </div>
           <div class="content-list_area">
-            <button class="more_button">
+            <button class="more_button" onclick="openPopup('contentPopup')">
               <img src="image/icon/플러스.svg" alt="더보기 버튼 아이콘">
               <span class="vh">더보기 버튼</span>
             </button>
@@ -694,7 +810,9 @@
           </div>
         </footer>
       </div>
+      
     </section>
+    
   </div>
 </body>
 </html>

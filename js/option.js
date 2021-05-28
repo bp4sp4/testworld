@@ -4,6 +4,7 @@ new fullpage('#fullpage',{
   scrollHorizontally: true,
   navigation: true,
   slidesNavigation: true,
-  controlArrows:false
+  controlArrows:false,
+  normalScrollElements: '.modal, .interest_content_box'
 });
 fullpage_api.setAllowScrolling(true);   

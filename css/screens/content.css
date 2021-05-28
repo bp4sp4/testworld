@@ -10,8 +10,9 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  /* background-color: #a69f92; */
 }
-.fullpage-two_wrap{
+.fullpage-two_wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
