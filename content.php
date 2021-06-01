@@ -1,3 +1,15 @@
+<?php
+include 'mysql.php';
+$gender = "";
+if($_POST["gender"]=="male")
+    $gender="남";
+else if($_POST["gender"]=="female")
+    $gender="여";
+$age=$_POST["ageGroup"];
+
+$sql = "INSERT INTO Non_mem (gender, age) VALUES('$gender','$age')";
+$result = mysqli_query($conn, $sql);
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,6 +24,8 @@
   <script defer type="text/javascript" src="./js/clickPopup.js"></script>
   <script defer type="text/javascript" src="./js/rankTab.js"></script>
   <script defer type="text/javascript" src="./js/copyUrl.js"></script>
+  <script defer src="./js/shareFacebook.js"></script>
+  <script defer src="./js/shareKakao.js"></script>
   <title>TestWorld</title>
 </head>
 <body>
@@ -28,13 +42,13 @@
           </button>
           <ul class="share_dropdown-items">
             <li>
-              <button>
+            <button id="shareBtnKakao" onclick="shareKakao()">
                  <img src="./image/icon/카카오톡.svg" alt="">
                  <div class="share-item_title">KAKAO</div>
               </button>
             </li>
             <li>
-              <button>
+              <button id="shareBtnFacebook" onclick="shareFacebok()">
                 <img src="./image/icon/페이스북.svg" alt="">
                 <div class="share-item_title">FACEBOOK</div>
               </button>

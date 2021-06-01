@@ -1,3 +1,11 @@
+<?php
+ include 'mysql.php';
+// 네이버 로그인 접근토큰 요청 예제
+ $client_id = "NLWJNKCwQHbapDmiuVEx";
+ $redirectURI = urlencode("http://yunholand.com/TestWorld/callback.php");
+ $state = "RAMDOM_STATE";
+ $apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=".$client_id."&redirect_uri=".$redirectURI."&state=".$state;
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,6 +16,10 @@
   <script defer src="./js/jquery-3.2.1.min.js"></script>
   <script defer src="./js/clickPopup.js"></script>
   <script defer src="./js/infiniteScroll.js"></script>
+  <script defer src="./js/copyUrl.js"></script>
+  <script defer src="./js/shareFacebook.js"></script>
+  <script defer src="./js/shareKakao.js"></script>
+  <script src="./js/kakao_min.js"></script>
   <title>TestWorld</title>
 </head>
 <body>
@@ -22,23 +34,23 @@
             <button><img src="./image/icon/공유.svg" alt="공유 아이콘"></button>
             <ul class="share_dropdown-items">
               <li>
-                <a href="">
+                <button id="shareBtnKakao" onclick="shareKakao()">
                    <img src="./image/icon/카카오톡.svg" alt="">
                    <div class="share-item_title">KAKAO</div>
-                </a>
+                </button>
               </li>
               <li>
-                <a href="">
+                <button id="shareBtnFacebook" onclick="shareFacebook()">
                   <img src="./image/icon/페이스북.svg" alt="">
                   <div class="share-item_title">FACEBOOK</div>
-                </a>
+                </button>
               </li>
               <li>
-                <a href="">
+                <button id="copyUrl" onclick="copyToClipboard();">
                   <img src="./image/icon/링크.svg" alt="">
                   <div class="share-item_title">URL</div>
-                </a>
-                </li>
+                </button>
+              </li>
             </ul>
           </li>
         </ul>
@@ -179,17 +191,46 @@
             </div>
             <div class="loginForm">
               <div class="login__sns">
-                <button class="loginBtn__kakao">카카오 로그인</button>
-                <button class="loginBtn__naver">네이버 로그인</button>
-              </div>
+            
+                <button class="loginBtn__kakao" onclick="kakaoLogin();">
+                <!--<img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" style="height: 50px; width: auto;"/>-->
+                카카오 로그인
+                </button>
+                  <script type='text/javascript'>
+                  window.Kakao.init('db469b9aebb971e5be59c94ec5e33108'); 
+                  function kakaoLogin() {
+                    window.Kakao.Auth.login({
+                      scope: 'account_email, gender, age_range',
+                      success: function(authObj) {
+                        console.log(authObj);
+                        window.Kakao.API.request({
+                          url:'/v2/user/me',
+                          success: res => {
+                            const kakao_account = res.kakao_account;
+                            console.log(kakao_account);
+                          }
+                        });
+                      }
+                    });
+                  }
+                  
+                  </script>
+                  <form>
+                  <form method ="post" action="callback.php">
+                   <a class="loginBtn__naver" href="<?php echo $apiURL ?>">
+                   <!--<img height="65" src="http://static.nid.naver.com/oauth/small_g_in.PNG"/>-->
+                   네이버 로그인
+                   </a>
+                   </form>
+                  </div>
               <div class="login__non">
-                <form action="">
+              <form method ="post" action="content.php">
                   <div class="gender_radio">
                     <label for="men">
-                      <input type="radio" name="gender" id="men">남
+                      <input type="radio" name="gender" id="men" value="male">남
                     </label>
                     <label for="woman">
-                      <input type="radio" name="gender" id="woman">여
+                      <input type="radio" name="gender" id="woman" value="female">여
                     </label>
                   </div>
                   <select name="ageGroup" id="ageGroup">

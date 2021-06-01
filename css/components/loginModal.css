@@ -24,6 +24,18 @@
 .loginForm .login__sns button:active {
   transform: scale(0.98);
 }
+.loginForm .login__sns a {
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.loginForm .login__sns a:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.loginForm .login__sns a:active {
+  transform: scale(0.98);
+}
 .loginForm .login__sns .loginBtn__kakao {
   border: 1px solid #807300;
   background-color: #fee500;

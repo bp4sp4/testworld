@@ -9,5 +9,5 @@ function copyToClipboard(val) {
 
   $('#copyUrl').click(function() {
     copyToClipboard('http://yunholand.com/TestWorld/index.php');
-    alert('TEST WORLD 의 URL을 복사하였습니다.');
+    alert('TEST WORLD URL을 복사하였습니다.');
   });
