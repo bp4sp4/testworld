@@ -16,19 +16,17 @@
   $response = curl_exec ($ch);
   $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-  $age_range = $_POST["age_range"];
-  $age_range_needs_agreement = $_POST["age_range_needs_agreement"];
-  $email = $_POST["email"];
-  $email_needs_agreement = $_POST["email_needs_agreement"];
-  $gender = $_POST["gender"];
-  $gender_needs_agreement = $_POST["gender_needs_agreement"];
-  $has_age_range = $_POST["has_age_range"];
-  $has_email = $_POST["has_email"]; 
-  $has_gender = $_POST["has_gender"];
-  $is_email_valid = $_POST["is_email_valid"];
-  $is_email_verified = $_POST["is_email_verified"];
+  $getData = json_decode($_POST["age_range"]);
+  $getData = json_decode($_POST["gender"]);
 
-  $sql = "INSERT INTO mem (age_range, age_range_needs_agreement, email, email_needs_agreement, gender, gender_needs_agreement, has_age_range, has_email,has_gender, is_email_valid, is_email_verified) VALUES ('$age_range','$age_range_needs_agreement','$email','$email_needs_agreement','$gender','$gender_needs_agreement','$has_age_range','$has_email','$has_gender','$is_email_valid','$is_email_verified')";
+  $sql = "INSERT INTO mem (
+    age_range, 
+    gender
+    ) 
+  VALUES (
+  '$age_range',
+  '$gender'
+  )";
   $result = mysqli_query($conn, $sql);
   ?>
 <!DOCTYPE html>

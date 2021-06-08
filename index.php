@@ -191,9 +191,8 @@
             </div>
             <div class="loginForm">
               <div class="login__sns">
-            
+
                 <button class="loginBtn__kakao" onclick="kakaoLogin();">
-                <!--<img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" style="height: 50px; width: auto;"/>-->
                 카카오 로그인
                 </button>
                   <script type='text/javascript'>
@@ -208,14 +207,14 @@
                           success: res => {
                             const kakao_account = res.kakao_account;
                             console.log(kakao_account);
+                            window.location.href="callback.php";
                           }
                         });
                       }
                     });
                   }
-                  
                   </script>
-                  <form>
+                  </form>
                   <form method ="post" action="callback.php">
                    <a class="loginBtn__naver" href="<?php echo $apiURL ?>">
                    <!--<img height="65" src="http://static.nid.naver.com/oauth/small_g_in.PNG"/>-->
@@ -224,13 +223,13 @@
                    </form>
                   </div>
               <div class="login__non">
-              <form method ="post" action="content.php">
+              <form method ="post" action="content.php ">
                   <div class="gender_radio">
                     <label for="men">
-                      <input type="radio" name="gender" id="men" value="male">남
+                      <input type="radio" name="gender" id="men" value="남">남
                     </label>
                     <label for="woman">
-                      <input type="radio" name="gender" id="woman" value="female">여
+                      <input type="radio" name="gender" id="woman" value="여">여
                     </label>
                   </div>
                   <select name="ageGroup" id="ageGroup">
