@@ -27,7 +27,7 @@ if ($_POST['ageGroup'] == 20) {
 }
 if ($_POST['ageGroup'] == 30) {
   if ($_POST['gender'] == '남') {
-      header( 'Location: content.php' );
+      header( 'Location: content3.php' );
   } else if ($_POST['gender'] == '여') {
       header( 'Location: content8.php' );
   }
@@ -35,14 +35,14 @@ if ($_POST['ageGroup'] == 30) {
 
 if ($_POST['ageGroup'] == 40) {
   if ($_POST['gender'] == '남') {
-      header( 'Location: content.php' );
+      header( 'Location: content4.php' );
   } else if ($_POST['gender'] == '여') {
       header( 'Location: content9.php' );
   }
 }
 if ($_POST['ageGroup'] == 50) {
   if ($_POST['gender'] == '남') {
-      header( 'Location: content.php' );
+      header( 'Location: content5.php' );
   } else if ($_POST['gender'] == '여') {
       header( 'Location: content10.php' );
   }
@@ -236,25 +236,19 @@ if ($_POST['ageGroup'] == 50) {
           <div class="interest_content_box">
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.lllkkdti.com/">
                   <div class="interest_content">
-                    <img src="./image/300x300.png" alt="썸네일이미지">
+                  <div class="thumbnail-1">꼰대성향 테스트</div> 
                     <div class="interest_content_desc">
                       <div class="interest_content_desc_text">
                         <h4>20대 심리테스트 1위</h4>
                         <p>
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                        르르르 꼰대성향 테스트 - 내 안의 꼰대성향 검사를 해보자!
                         </p>
                       </div>
                       <div class="interest_content_desc_func">
                         <button class="star"><img src="./image/icon/별_빈.svg" alt=""></button>
                         <div class="recommend_number">
-
                         </div>
                       </div>
                     </div>
@@ -262,19 +256,14 @@ if ($_POST['ageGroup'] == 50) {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://iqtest.so/">
                   <div class="interest_content">
-                    <img src="./image/300x300.png" alt="썸네일이미지">
+                  <div class="thumbnail-2">멘사IQ테스트</div> 
                     <div class="interest_content_desc">
                       <div class="interest_content_desc_text">
                         <h4>20대 심리테스트 2위</h4>
                         <p>
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+               멘사 IQ 테스트 - 나도 멘사 회원이 될수도 있을까? IQ 테스트를 해보자!
                         </p>
                       </div>
                       <div class="interest_content_desc_func">
@@ -288,19 +277,14 @@ if ($_POST['ageGroup'] == 50) {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://umentia.com/psy1">
                   <div class="interest_content">
-                    <img src="./image/300x300.png" alt="썸네일이미지">
+                  <div class="thumbnail-3">유멘시아</div> 
                     <div class="interest_content_desc">
                       <div class="interest_content_desc_text">
                         <h4>20대 심리테스트 3위</h4>
                         <p>
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                     유멘시아 - 각종 테스트가 모와져 있는 사이트!
                         </p>
                       </div>
                       <div class="interest_content_desc_func">
@@ -316,17 +300,12 @@ if ($_POST['ageGroup'] == 50) {
               <li>
                 <a href="#">
                   <div class="interest_content">
-                    <img src="./image/300x300.png" alt="썸네일이미지">
+                    <div class="thumbnail-4">친구유형테스트</div>
                     <div class="interest_content_desc">
                       <div class="interest_content_desc_text">
                         <h4>20대 심리테스트 4위</h4>
                         <p>
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                        친구유형 테스트 - 친구들은 날 어떡해 생각하고 있을까?
                         </p>
                       </div>
                       <div class="interest_content_desc_func">

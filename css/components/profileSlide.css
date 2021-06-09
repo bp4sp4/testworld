@@ -69,6 +69,7 @@
     10px 9px 0px #59554f, 9px 10px 0px #59554f, 11px 10px 0px #59554f,
     10px 11px 0px #59554f, 12px 11px 0px #59554f, 11px 12px 0px #59554f;
 }
+
 .interest_content_box::-webkit-scrollbar {
   width: 10px;
 }
@@ -94,13 +95,15 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
 .interest_content img {
   width: 150px;
 }
 .interest_content .interest_content_desc {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: center ;
   width: 100%;
   height: 150px;
   padding: 20px;
@@ -108,8 +111,9 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .interest_content .interest_content_desc_text > h4 {
-  font-size: 30px;
+  font-size: 35px;
   margin: 0 0 1em 0;
+  
 }
 .interest_content .interest_content_desc_text > p {
   overflow: hidden;
@@ -120,6 +124,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-size: 20px;
 }
 
 .interest_content .interest_content_desc_func {
@@ -130,3 +135,440 @@
 .interest_content .interest_content_desc_func > button img {
   width: 30px;
 }
+
+ /* 20대 남자 시작 300X300 자리 시작 */
+ .interest_content .thumbnail {
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color: aqua;
+  font-size: large;
+ }
+
+ .interest_content .thumbnail-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color: #dfff00;
+  font-size: large;
+ }
+ .interest_content .thumbnail-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color: #26679a;
+  font-size: large;
+ }
+ .interest_content .thumbnail-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color: #d9dbdd;
+  font-size: large;
+ }
+ .interest_content .thumbnail-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  rgb(255, 0, 86);
+  font-size: large;
+ } 
+
+ /* 20대 끝 */
+
+ /* 10대 남자 시작 */
+ .interest_content .thumbnail-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #c5e6ff;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #35c5f0;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #597991;
+ } 
+ .interest_content .thumbnail-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #000000;
+  color: #ffffff;
+  font-size: large;
+
+  /*10 대 끝 */
+
+  /* 30대 남자 시작 */
+ } .interest_content .thumbnail-9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #54ffa0;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #3b27ff;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #606060;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  black;
+  color: #ffffff;
+  font-size: large;
+ } 
+/* 30대 남자 끝 */
+
+/*40대 남자 시작*/
+ .interest_content .thumbnail-13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #eefba4;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #a1a878;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #424534;
+  color: #ffffff;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-16 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #d4aea8;
+  font-size: large;
+ } 
+
+ /* 40대 남자 끝 */
+
+ /* 50대 남자 시작 */
+ .interest_content .thumbnail-17 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #fef592;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-18 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #ffef41;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-19 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #20e870;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #f8b477;
+  font-size: large;
+ } 
+ /* 50대 남자 끝*/
+
+ /* 10대 여자 시작 */
+ .interest_content .thumbnail-21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #ffd5af;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-22 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #9c9680;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-23 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #615733;
+  color : white;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-24 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #0c110b;
+  color: white;
+  font-size: large;
+ } 
+ /* 10대 여자끝 */
+
+ /* 20대 여자 시작 */
+ .interest_content .thumbnail-25 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #a5f43e;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-26 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #0e5e2e;
+  color: white;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-27 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #2e3832;
+  color: white;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-28 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #00ff66;
+  font-size: large;
+ } 
+ /* 20대 여자 끝 */
+
+ /* 30대 여자 시작 */
+ .interest_content .thumbnail-29 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #f364f8;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-30 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #af41b3;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-31 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #06be72;
+  font-size: large;
+ } 
+ .interest_content .thumbnail-32 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #704040;
+  color: white;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-33 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #f5f785;
+  
+  font-size: large;
+ } 
+/*30 대 여자 끝 */
+
+/*40대 여자 시작 */
+ .interest_content .thumbnail-34 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #c9db76;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-35 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #bbbbbb;
+
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-36 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #b1fdb8;
+
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-37 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #3b3131;
+  color: white;
+  font-size: large;
+ } 
+/* 40대 여자 끝 */
+
+/* 50대 여자 시작 */
+ .interest_content .thumbnail-38 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #341480;
+  color: white;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-39 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #150931;
+  color: white;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-40 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #ffc342;
+  font-size: large;
+ } 
+
+ .interest_content .thumbnail-41 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 170px;
+  background-color:  #c7006d;
+  font-size: large;
+ } 
+
+/* 50 대 여자 끝 */

@@ -173,29 +173,24 @@
         <div class="rollingPage_1">
           <div class="profile">
             <div class="people_img">
-              <img src="./image/genderImage/M/20대_남자.svg" alt="20대 남자">
+              <img src="./image/genderImage/M/10대_남자.svg" alt="20대 남자">
             </div>
             <div class="profile_info">
               <div class="info_gender">MAN</div>
-              <div class="info_age">20<span>s</span></div>
+              <div class="info_age">10<span>s</span></div>
             </div>
           </div>
           <div class="interest_content_box">
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.simcong.com/">
                   <div class="interest_content">
-                    <img src="./image/300x300.png" alt="썸네일이미지">
+                  <div class="thumbnail-5">심콩</div> 
                     <div class="interest_content_desc">
                       <div class="interest_content_desc_text">
-                        <h4>20대 심리테스트 1위</h4>
+                        <h4>10대 심리테스트 1위</h4>
                         <p>
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                         simcong -  여러가지 테스트가 모아져 있느 심콩!
                         </p>
                       </div>
                       <div class="interest_content_desc_func">
@@ -209,19 +204,14 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://ohou.se/promotions/ten_million_download?type=share">
                   <div class="interest_content">
-                    <img src="./image/300x300.png" alt="썸네일이미지">
+                  <div class="thumbnail-6">전생의 집</div> 
                     <div class="interest_content_desc">
                       <div class="interest_content_desc_text">
-                        <h4>20대 심리테스트 2위</h4>
+                        <h4>10대 심리테스트 2위</h4>
                         <p>
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                       전생의 집 - 나는 전생에 어떤 집에 살았을까?
                         </p>
                       </div>
                       <div class="interest_content_desc_func">
@@ -235,19 +225,14 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://poomang.com/">
                   <div class="interest_content">
-                    <img src="./image/300x300.png" alt="썸네일이미지">
+                  <div class="thumbnail-7">푸망</div>
                     <div class="interest_content_desc">
                       <div class="interest_content_desc_text">
-                        <h4>20대 심리테스트 3위</h4>
+                        <h4>10대 심리테스트 3위</h4>
                         <p>
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                          푸망 - 금주의 핫한 테스트 심리테스트 엄청많다!
                         </p>
                       </div>
                       <div class="interest_content_desc_func">
@@ -261,19 +246,14 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://app.m-nitpick.com/v1/web/event/11/public">
                   <div class="interest_content">
-                    <img src="./image/300x300.png" alt="썸네일이미지">
+                  <div class="thumbnail-8">대통령테스트</div>
                     <div class="interest_content_desc">
                       <div class="interest_content_desc_text">
-                        <h4>20대 심리테스트 4위</h4>
+                        <h4>10대 심리테스트 4위</h4>
                         <p>
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
-                          간단 설명입니다.간단 설명입니다.간단 설명입니다.간단 설명입니다.
+                          대통령테스트 - 나와 비슷한 대통령은 누구일까?
                         </p>
                       </div>
                       <div class="interest_content_desc_func">
